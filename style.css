@@ -1,0 +1,136 @@
+/* 
+cyan super dark: ;
+cyan dark: #288FC0
+cyan light: #00AAC2;
+*/
+
+/* tags */
+body{
+	margin: 8px 0;
+}
+
+h2{
+	font-size: 22px;
+	font-weight: bold;
+	padding: 20px 0 8px 0;
+}
+
+/* header */
+.header{
+	padding: 20px;
+	text-align: center;
+}
+
+.imgLogo{
+	padding:0 0 20px 0;
+	max-width: 275px;
+}
+
+/*main*/
+.main{
+	display: flex;
+}
+
+ /* main-left */
+.main-left{
+	text-align: center;
+	flex: 30%;
+	background: #00AAC2;
+}
+
+.main-left p{
+	margin: 16px 13%;
+	font-size: 22px;
+}
+
+.main-left div{
+	height: 30%;
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.main-left div button{
+	font-size: 16px;
+	height: 35%;
+}
+
+/* main-right */
+.main-right{
+	flex:70%;
+	background: #288FC0;
+}
+
+.main-right h2{
+	text-align: center;
+}
+
+.main-right-last-row, .main-right-row{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2%;
+}
+
+.main-right-row{
+	display: flex;
+	align-items: center;
+	height:18%;
+}
+
+.div-radios{
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.div-nombre, .div-mail{
+	width: 50%;
+}
+
+.div-radios, .div-fono{
+	width: 30%;
+}
+
+.wrap-input{
+	margin: 2%;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+
+label[for="dsct"], label[for="nodsct"]{
+	font-size:18px;
+}
+
+.input{
+	display: block;
+  width: 100%;
+  background: white;
+  font-family: Montserrat-SemiBold;
+  font-size: 24px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 15px;
+  border:0;
+}
+
+
+
+/* footer */
+.footer{
+	text-align: center;
+}
+
+/* fucking arrows in iput number */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
